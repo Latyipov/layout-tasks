@@ -1,0 +1,1156 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400,600,700,900&display=swap');
+body {
+    margin: 0 auto;
+    max-width: 120rem;
+    padding: 0;
+    font-size: 0.8rem;
+    line-height: 20px;
+    font-family: Montserrat, sans-serif;
+    color: #737373;
+    background-color: #F7F7F7;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.1rem;
+    line-height: 57px;
+    text-align: center;
+    color: #252B42;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.1rem;
+    line-height: 57px;
+    text-align: center;
+    color: #252B42;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 0.9rem;
+    font-weight: normal;
+    text-align: center;
+    margin: 3rem auto;
+    max-width: 376px;
+    line-height: 1.5rem;
+    letter-spacing: 0.2px;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+.flexible-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+}
+
+.btn {
+    text-align: center;
+    border: 1px solid #FFA62B;
+}
+
+header .features {
+    justify-content: space-around;
+    margin-bottom: -3rem;
+}
+
+header .features dl {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 20rem;
+    height: 11rem;
+    background-color: white;
+    margin: 1rem 0;
+    padding-left: 2.3rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 0 20px 4px rgba(255, 255, 255, 0.931);
+}
+
+header .features dl dt {
+    position: relative;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #252B42;
+    margin: 0.9rem 0;
+}
+
+header .features dl dd {
+    font-size: 0.9rem;
+    width: 80%;
+    margin: 0;
+}
+
+header .features dl:hover {
+    background-color: #00A0C1;
+    color: white;
+}
+
+header .features dl:hover>dt {
+    color: white;
+}
+
+header .features dl dt[class='bussines-img']::before {
+    content: '';
+    position: absolute;
+    top: -3.4rem;
+    width: 3rem;
+    height: 2.7rem;
+    background: url('img/box.png') no-repeat;
+    background-size: contain;
+}
+
+header .features dl:hover>dt[class='bussines-img']::before {
+    background: url('img/box-white.png') no-repeat;
+    background-size: contain;
+}
+
+header .features dl dt[class='web-shop-img']::before {
+    content: '';
+    position: absolute;
+    top: -3.4rem;
+    width: 3rem;
+    height: 2.7rem;
+    background: url('img/shop.png') no-repeat;
+    background-size: contain;
+}
+
+header .features dl:hover>dt[class='web-shop-img']::before {
+    background: url('img/shop-white.png') no-repeat;
+    background-size: contain;
+}
+
+header .features dl dt[class='bussines-growing-img']::before {
+    content: '';
+    position: absolute;
+    top: -3.4rem;
+    width: 3rem;
+    height: 2.7rem;
+    background: url('img/book.png') no-repeat;
+    background-size: contain;
+}
+
+header .features dl:hover>dt[class='bussines-growing-img']::before {
+    background: url('img/book-white.png') no-repeat;
+    background-size: contain;
+}
+
+main .subscribe .subscribe-form-container {
+    justify-content: space-around;
+}
+
+main .subscribe .subscribe-form {
+    border-radius: 5px;
+    width: 100%;
+    max-width: 30rem;
+    background-color: white;
+    margin: 0.5rem;
+    border: 1px solid white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .subscribe .subscribe-form input[type='email'] {
+    border: none;
+    margin: 0;
+    width: 58%;
+    height: 100%;
+    border-radius: 5px;
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+
+main .subscribe .subscribe-form input[type="submit"] {
+    border: none;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    width: 34%;
+    height: 100%;
+    background-color: #FFA62B;
+    ;
+    color: white;
+    height: 3.6rem;
+    font-size: 1rem;
+}
+
+@media screen and (max-width:600px) {
+    h3 {
+        width: 15rem;
+        margin: 2.5rem auto;
+    }
+    header {
+        background: url('img/cover.png') center no-repeat;
+        background-size: cover;
+        padding-bottom: 13rem;
+    }
+    header .nav-background {
+        background-color: #ffffff;
+        width: 100%;
+        padding-top: 36px;
+    }
+    header .logo-and-nav .logo {
+        width: 106px;
+        height: 32px;
+    }
+    header .logo-and-nav .logo img {
+        width: 100%;
+    }
+    header .logo-and-nav button {
+        border: none;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        margin-left: 1rem;
+        background-color: rgb(255, 255, 255, 0);
+    }
+    header .logo-and-nav button img {
+        width: 100%;
+    }
+    header .logo-and-nav {
+        justify-content: space-between;
+    }
+    header .logo-and-nav .navigation {
+        width: 100%;
+    }
+    header .logo-and-nav .navigation ul {
+        margin: 90px 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 45px;
+    }
+    header .logo-and-nav .navigation ul li {
+        padding-bottom: 30px;
+    }
+    header .logo-and-nav .navigation ul li a {
+        text-decoration: none;
+        color: inherit;
+    }
+    header .logo-and-nav .navigation ul li a:hover {
+        border-bottom: 1px solid #737373;
+    }
+    header .logo-and-nav .navigation ul li a:active {
+        color: #9c9c9c;
+        border-bottom: 1px solid #9c9c9c;
+    }
+    header h3 {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    header .quote-btn {
+        display: flex;
+        font-size: 0.8rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        width: 10rem;
+        height: 3rem;
+        margin: 1rem auto;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #FFA62B;
+        border-radius: 37px;
+        padding: 0 0.7rem;
+    }
+    header .quote-btn:hover {
+        background-color: white;
+        color: #FFA62B;
+    }
+    header .quote-btn:active {
+        color: #fdd296;
+        border-color: #fdd296;
+    }
+    header .learn-more-btn {
+        display: flex;
+        font-size: 0.8rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: #00A0C1;
+        border-color: #00A0C1;
+        width: 10rem;
+        height: 3rem;
+        margin: 1rem auto 4rem auto;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #F3F3F3;
+        border-radius: 37px;
+    }
+    header .learn-more-btn:hover {
+        background-color: #00A0C1;
+        color: white;
+    }
+    header .learn-more-btn:active {
+        background-color: #49abbe;
+        color: white;
+    }
+    main .why-choose-us {
+        background-color: #F3F3F3;
+    }
+    main .why-choose-us h2 {
+        display: block;
+        width: 14rem;
+        margin: 0 auto;
+    }
+    main .why-choose-us .strength {
+        justify-content: space-around;
+    }
+    main .why-choose-us .strength dl {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        width: 12rem;
+        height: 12rem;
+        background-color: white;
+        text-align: center;
+        margin: 1rem 0;
+        padding: 0 2rem 2rem 2rem;
+    }
+    main .why-choose-us .strength dt {
+        font-size: 2.4rem;
+        color: #252B42;
+        font-weight: bold;
+        margin: 1.5rem 0;
+        position: relative;
+    }
+    main .why-choose-us .strength dd {
+        font-weight: bold;
+        margin: 0;
+    }
+    main .why-choose-us .strength dt::before {
+        content: '';
+        position: absolute;
+        top: -4rem;
+        width: 3rem;
+        height: 2.7rem;
+        background-size: contain;
+    }
+    main .why-choose-us .strength dt[class=users-img]::before {
+        background: url('img/clarity_users-line.png') no-repeat;
+    }
+    main .why-choose-us .strength dt[class=chart-img]::before {
+        background: url('img/chart.png') no-repeat;
+    }
+    main .why-choose-us .strength dt[class=award-img]::before {
+        background: url('img/medal.png') no-repeat;
+    }
+    main .why-choose-us .strength dt[class=box-img]::before {
+        background: url('img/box.png') no-repeat;
+    }
+    main .practice-advice {
+        background-color: #F3F3F3;
+    }
+    main .practice-advice .advice-blocks {
+        justify-content: space-around;
+    }
+    main .practice-advice .advice-blocks dl {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 14.5rem;
+        background-color: white;
+        margin: 1rem 0;
+    }
+    main .practice-advice .advice-blocks dl dt {
+        font-weight: bold;
+        font-size: 0.9rem;
+        color: #252B42;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        padding-left: 1.5rem;
+        width: 55%;
+    }
+    main .practice-advice .advice-blocks dl dd {
+        padding-left: 1.5rem;
+        width: 67%;
+        margin: 0;
+    }
+    main .practice-advice .advice-blocks dl img {
+        margin-top: 2rem;
+        width: 100%
+    }
+    main .best-service .video {
+        display: block;
+        margin: 0 auto;
+        width: 15rem;
+        height: 20rem;
+    }
+    main .best-service .trust-block h2,
+    main .best-service .trust-block h3 {
+        text-align: left;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    main .best-service .trust-block dl {
+        padding-left: 3.3rem;
+    }
+    main .best-service .trust-block dl dt {
+        position: relative;
+        font-weight: bold;
+        font-size: 0.9rem;
+        color: #252B42;
+    }
+    main .best-service .trust-block dl dt::before {
+        content: '';
+        position: absolute;
+        left: -3rem;
+        width: 3rem;
+        height: 2.7rem;
+        background-size: contain;
+    }
+    main .best-service .trust-block dl dt[class='people']::before {
+        background: url('img/people.png') no-repeat;
+    }
+    main .best-service .trust-block dl dt[class='speed']::before {
+        background: url('img/speed.png') no-repeat;
+    }
+    main .best-service .trust-block dl dd {
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+    main .our-customers {
+        background-color: #F3F3F3;
+    }
+    main .our-customers .flexible-container {
+        justify-content: space-around;
+        align-items: center;
+    }
+    main .our-customers img {
+        width: 9rem;
+        margin: 2rem;
+    }
+    main .subscribe {
+        background-color: #16697A;
+        padding: 2rem 0;
+    }
+    main .subscribe h2 {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        margin: 0;
+        color: white;
+    }
+    main .contacts {
+        background-color: #F3F3F3;
+    }
+    main .contacts h3 {
+        margin-top: 0;
+        font-weight: bold;
+    }
+    main .contacts .flexible-container {
+        justify-content: space-around;
+    }
+    main .contacts .contact-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        width: 18rem;
+        height: 18rem;
+        background-color: white;
+        margin: 1rem 0;
+        padding-bottom: 2rem;
+    }
+    main .contacts .contact-block:hover {
+        background-color: #252B42;
+        color: white;
+    }
+    main .contacts .contact-block p {
+        font-weight: bold;
+        font-style: normal;
+        text-align: center;
+    }
+    main .contacts .contact-block h3 {
+        color: #252B42;
+        font-size: 1rem;
+        font-weight: bold;
+        font-style: normal;
+        margin-bottom: 1rem;
+    }
+    main .contacts .contact-block:hover>h3 {
+        color: white;
+    }
+    main .contacts .contact-block a {
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        color: #FFA62B;
+        border-radius: 5px;
+        font-style: normal;
+        position: relative;
+    }
+    main .contacts .contact-block a::before {
+        content: '';
+        position: absolute;
+        top: -12rem;
+        width: 5rem;
+        height: 5rem;
+        background-size: contain;
+    }
+    main .contacts .contact-block a[class='contact-phone-number btn']::before {
+        background: url('img/contact-phone.png') no-repeat;
+        left: 0;
+    }
+    main .contacts .contact-block a[class='contact-adress btn']::before {
+        background: url('img/contact-place.png') no-repeat;
+        left: 1rem;
+    }
+    main .contacts .contact-block a[class='contact-email btn']::before {
+        background: url('img/contact-email.png') no-repeat;
+        left: 1rem;
+    }
+    main .contacts .contact-block:hover>a {
+        color: white;
+        border-color: white;
+    }
+    main .contacts .contact-block:hover>[class='contact-phone-number btn']::before {
+        background: url('img/contact-phone-white.png') no-repeat;
+    }
+    main .contacts .contact-block:hover>[class='contact-adress btn']::before {
+        background: url('img/contact-place-white.png') no-repeat;
+    }
+    main .contacts .contact-block:hover>[class='contact-email btn']::before {
+        background: url('img/contact-email-white.png') no-repeat;
+    }
+    main .consulting {
+        padding: 3rem 0;
+    }
+    main .consulting h2 {
+        text-align: left;
+        font-size: 1.5rem;
+        padding-left: 3rem;
+        line-height: 133%;
+    }
+    main .consulting h3 {
+        text-align: left;
+        margin: 0;
+        padding-left: 3rem;
+    }
+    main .consulting .contact-us-btn {
+        display: block;
+        width: 6rem;
+        margin-top: 3rem;
+        margin-left: 3rem;
+        padding: 1rem 2.5rem;
+        border-radius: 5px;
+        background-color: #FFA62B;
+        color: white;
+        text-decoration: none;
+    }
+    main .consulting .contact-us-btn:hover {
+        background-color: white;
+        color: #FFA62B;
+    }
+    main .consulting .contact-us-btn:active {
+        color: #eed0a7;
+        border-color: #eed0a7;
+    }
+    footer {
+        background-color: #16697A;
+    }
+    footer h3 {
+        font-size: 1rem;
+        text-align: left;
+        margin-left: 2.5rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+    }
+    footer ul {
+        list-style: none;
+        line-height: 2rem;
+        font-weight: 600;
+    }
+    footer a {
+        text-decoration: none;
+        color: white;
+    }
+    footer a:hover {
+        border-bottom: 1px solid white;
+    }
+    footer a:active {
+        color: rgb(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgb(255, 255, 255, 0.3);
+    }
+    footer address a {
+        position: relative;
+        display: inline-block;
+        margin: 1rem 4.2rem;
+        font-style: normal;
+        font-weight: 600;
+    }
+    footer address a::before {
+        position: absolute;
+        content: '';
+        width: 1.5rem;
+        height: 1.5rem;
+        background: url('img/contact-phone.png') no-repeat;
+        background-size: contain;
+        left: -2rem;
+    }
+    footer address a[class='contact-phone-number']::before {
+        background: url('img/contact-phone.png') no-repeat;
+        background-size: contain;
+    }
+    footer address a[class='contact-adress']::before {
+        background: url('img/contact-place.png') no-repeat;
+        background-size: contain;
+    }
+    footer address a[class='contact-email']::before {
+        background: url('img/contact-email.png') no-repeat;
+        background-size: contain;
+    }
+    footer .footer-site-list {
+        padding: 3rem 0;
+        color: white;
+    }
+    footer .footer-social-net {
+        background-color: white;
+        padding: 3rem 0 4rem 2.5rem;
+    }
+    footer .footer-social-net p {
+        width: 13rem;
+        font-weight: 600;
+    }
+    footer .footer-social-net a {
+        display: inline-block;
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 0;
+        margin-right: 1rem;
+        vertical-align: middle;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    footer .footer-social-net .facebook-btn {
+        background-image: url('img/facebook.png');
+    }
+    footer .footer-social-net .instagramm-btn {
+        background-image: url('img/insta.png');
+    }
+    footer .footer-social-net .tweeter-btn {
+        background-image: url('img/tweeter.png');
+    }
+    footer .footer-social-net .youtube-btn {
+        background-image: url('img/youtube.png');
+    }
+    footer .footer-social-net a:active {
+        opacity: 0.3;
+    }
+}
+
+
+/* css more than 600px */
+
+@media screen and (min-width:600px) {
+    h3 {
+        margin: 3rem auto;
+        width: auto;
+    }
+    header {
+        background: url('img/cover1.png') top no-repeat;
+        background-size: cover;
+        padding-top: 3rem;
+    }
+    header .logo-and-nav .logo {
+        width: 11rem;
+        height: 2rem;
+        margin-bottom: 2rem;
+    }
+    header .logo-and-nav .logo img {
+        width: 100%;
+    }
+    header .logo-and-nav button {
+        border: none;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        margin-left: 1rem;
+        background-color: rgb(255, 255, 255, 0);
+    }
+    header .logo-and-nav button img {
+        width: 100%;
+    }
+    header .logo-and-nav {
+        justify-content: space-between;
+    }
+    header .logo-and-nav .header-buttons {
+        order: 3;
+    }
+    header .logo-and-nav .navigation ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 45px;
+    }
+    header .logo-and-nav .navigation ul li {
+        padding-bottom: 30px;
+        display: inline-block;
+        margin-right: 2rem;
+    }
+    header .logo-and-nav .navigation ul li a {
+        text-decoration: none;
+        color: inherit;
+    }
+    header .logo-and-nav .navigation ul li a:hover {
+        border-bottom: 1px solid #737373;
+    }
+    header .logo-and-nav .navigation ul li a:active {
+        color: #9c9c9c;
+        border-bottom: 1px solid #9c9c9c;
+    }
+    header h1 {
+        font-size: 58px;
+        line-height: 80px;
+        text-align: left;
+        margin-top: 6rem;
+    }
+    header h3 {
+        text-align: left;
+        margin: 0;
+        font-size: 20px;
+        line-height: 30px;
+        width: auto;
+    }
+    header .quote-btn {
+        display: flex;
+        font-size: 0.8rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        width: 10rem;
+        height: 3rem;
+        margin: 2rem 1rem 2rem 0;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #FFA62B;
+        border-radius: 37px;
+        padding: 0 0.7rem;
+    }
+    header .quote-btn:hover {
+        background-color: white;
+        color: #FFA62B;
+    }
+    header .quote-btn:active {
+        color: #fdd296;
+        border-color: #fdd296;
+    }
+    header .learn-more-btn {
+        display: flex;
+        font-size: 0.8rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: #00A0C1;
+        border-color: #00A0C1;
+        width: 10rem;
+        height: 3rem;
+        margin: 2rem 1rem 2rem 0;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #F3F3F3;
+        border-radius: 37px;
+    }
+    header .learn-more-btn:hover {
+        background-color: #00A0C1;
+        color: white;
+    }
+    header .learn-more-btn:active {
+        background-color: #49abbe;
+        color: white;
+    }
+    .header-buttons {
+        flex-direction: row;
+        justify-content: start;
+    }
+    main .why-choose-us {
+        background-color: #F3F3F3;
+        padding-top: 9rem;
+    }
+    main .why-choose-us h2 {
+        display: block;
+        margin: 0 auto;
+    }
+    main .why-choose-us .strength {
+        justify-content: space-around;
+    }
+    main .why-choose-us .strength dl {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        width: 12rem;
+        height: 12rem;
+        background-color: white;
+        text-align: center;
+        margin: 1rem 0;
+        padding: 0 2rem 2rem 2rem;
+    }
+    main .why-choose-us .strength dt {
+        font-size: 2.4rem;
+        color: #252B42;
+        font-weight: bold;
+        margin: 1.5rem 0;
+        position: relative;
+    }
+    main .why-choose-us .strength dd {
+        font-weight: bold;
+        margin: 0;
+    }
+    main .why-choose-us .strength dt::before {
+        content: '';
+        position: absolute;
+        top: -4rem;
+        width: 3rem;
+        height: 2.7rem;
+        background-size: contain;
+    }
+    main .why-choose-us .strength dt[class=users-img]::before {
+        background: url('img/clarity_users-line.png') no-repeat;
+    }
+    main .why-choose-us .strength dt[class=chart-img]::before {
+        background: url('img/chart.png') no-repeat;
+    }
+    main .why-choose-us .strength dt[class=award-img]::before {
+        background: url('img/medal.png') no-repeat;
+    }
+    main .why-choose-us .strength dt[class=box-img]::before {
+        background: url('img/box.png') no-repeat;
+    }
+    main .practice-advice {
+        background-color: #F3F3F3;
+    }
+    main .practice-advice .advice-blocks {
+        justify-content: space-around;
+    }
+    main .practice-advice .advice-blocks dl {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 14.5rem;
+        background-color: white;
+        margin: 1rem 0;
+    }
+    main .practice-advice .advice-blocks dl dt {
+        font-weight: bold;
+        font-size: 0.9rem;
+        color: #252B42;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        padding-left: 1.5rem;
+        width: 55%;
+    }
+    main .practice-advice .advice-blocks dl dd {
+        padding-left: 1.5rem;
+        width: 67%;
+        margin: 0;
+    }
+    main .practice-advice .advice-blocks dl img {
+        margin-top: 2rem;
+        width: 100%
+    }
+    main .best-service h2 {
+        margin: 0 auto;
+        max-width: 32rem;
+    }
+    main .best-service .flexible-container {
+        padding-top: 5rem;
+        justify-content: space-between;
+    }
+    main .best-service .video {
+        display: block;
+        width: 39rem;
+        height: 22rem;
+        margin-right: 1rem;
+        margin-bottom: 3rem;
+    }
+    main .best-service .trust-block h2,
+    main .best-service .trust-block h3 {
+        text-align: left;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    main .best-service .trust-block dl {
+        padding-left: 3.3rem;
+    }
+    main .best-service .trust-block dl dt {
+        position: relative;
+        font-weight: bold;
+        font-size: 0.9rem;
+        color: #252B42;
+    }
+    main .best-service .trust-block dl dt::before {
+        content: '';
+        position: absolute;
+        left: -3rem;
+        width: 3rem;
+        height: 2.7rem;
+        background-size: contain;
+    }
+    main .best-service .trust-block dl dt[class='people']::before {
+        background: url('img/people.png') no-repeat;
+    }
+    main .best-service .trust-block dl dt[class='speed']::before {
+        background: url('img/speed.png') no-repeat;
+    }
+    main .best-service .trust-block dl dd {
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+    main .our-customers {
+        background-color: #F3F3F3;
+    }
+    main .our-customers .flexible-container {
+        justify-content: space-around;
+        align-items: center;
+    }
+    main .our-customers img {
+        width: 9rem;
+        margin: 2rem;
+    }
+    main .subscribe {
+        padding: 0;
+        margin: 5rem 0 0 0;
+        background-color: #252B42;
+        min-height: 6rem;
+    }
+    main .subscribe h2 {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        color: white;
+        margin: 1rem;
+    }
+    .subscribe-form-container {
+        background-color: #16697A;
+        margin-top: -4rem;
+        width: 100%;
+        padding: 2rem 0 0.8rem 0;
+    }
+    main .subscribe .subscribe-form-container {
+        justify-content: space-around;
+    }
+    main .contacts {
+        background-color: #F3F3F3;
+    }
+    main .contacts h3 {
+        margin-top: 0;
+        font-weight: bold;
+    }
+    main .contacts .flexible-container {
+        justify-content: space-around;
+    }
+    main .contacts .contact-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        width: 18rem;
+        height: 18rem;
+        background-color: white;
+        margin: 1rem 0;
+        padding-bottom: 2rem;
+    }
+    main .contacts .contact-block:hover {
+        background-color: #252B42;
+        color: white;
+    }
+    main .contacts .contact-block p {
+        font-weight: bold;
+        font-style: normal;
+        text-align: center;
+    }
+    main .contacts .contact-block h3 {
+        color: #252B42;
+        font-size: 1rem;
+        font-weight: bold;
+        font-style: normal;
+        margin-bottom: 1rem;
+    }
+    main .contacts .contact-block:hover>h3 {
+        color: white;
+    }
+    main .contacts .contact-block a {
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        color: #FFA62B;
+        border-radius: 5px;
+        font-style: normal;
+        position: relative;
+    }
+    main .contacts .contact-block a::before {
+        content: '';
+        position: absolute;
+        top: -12rem;
+        width: 5rem;
+        height: 5rem;
+        background-size: contain;
+    }
+    main .contacts .contact-block a[class='contact-phone-number btn']::before {
+        background: url('img/contact-phone.png') no-repeat;
+        left: 0;
+    }
+    main .contacts .contact-block a[class='contact-adress btn']::before {
+        background: url('img/contact-place.png') no-repeat;
+        left: 1rem;
+    }
+    main .contacts .contact-block a[class='contact-email btn']::before {
+        background: url('img/contact-email.png') no-repeat;
+        left: 1rem;
+    }
+    main .contacts .contact-block:hover>a {
+        color: white;
+        border-color: white;
+    }
+    main .contacts .contact-block:hover>[class='contact-phone-number btn']::before {
+        background: url('img/contact-phone-white.png') no-repeat;
+    }
+    main .contacts .contact-block:hover>[class='contact-adress btn']::before {
+        background: url('img/contact-place-white.png') no-repeat;
+    }
+    main .contacts .contact-block:hover>[class='contact-email btn']::before {
+        background: url('img/contact-email-white.png') no-repeat;
+    }
+    main .consulting {
+        padding: 3rem 0;
+    }
+    main .consulting .flexible-container {
+        justify-content: space-between;
+        align-items: center;
+    }
+    main .consulting h2 {
+        text-align: left;
+        font-size: 1.5rem;
+        line-height: 133%;
+    }
+    main .consulting h3 {
+        text-align: left;
+        margin: 0;
+    }
+    main .consulting .contact-us-btn {
+        display: block;
+        width: 6rem;
+        padding: 1rem 2.5rem;
+        border-radius: 5px;
+        background-color: #FFA62B;
+        color: white;
+        text-decoration: none;
+    }
+    main .consulting .contact-us-btn:hover {
+        background-color: white;
+        color: #FFA62B;
+    }
+    main .consulting .contact-us-btn:active {
+        color: #eed0a7;
+        border-color: #eed0a7;
+    }
+    footer {
+        background-color: #16697A;
+    }
+    footer h3 {
+        font-size: 1rem;
+        text-align: left;
+        margin-left: 2.5rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+    }
+    footer ul {
+        list-style: none;
+        line-height: 2rem;
+        font-weight: 600;
+    }
+    footer a {
+        text-decoration: none;
+        color: white;
+    }
+    footer a:hover {
+        text-decoration: underline;
+    }
+    footer a:active {
+        color: rgb(255, 255, 255, 0.3);
+        text-decoration: underline;
+    }
+    footer address a {
+        position: relative;
+        display: inline-block;
+        margin: 0.8rem 4.2rem;
+        font-style: normal;
+        font-weight: 600;
+    }
+    footer address a::before {
+        position: absolute;
+        content: '';
+        width: 1.5rem;
+        height: 1.5rem;
+        background: url('img/contact-phone.png') no-repeat;
+        background-size: contain;
+        left: -2rem;
+    }
+    footer address a[class='contact-phone-number']::before {
+        background: url('img/contact-phone.png') no-repeat;
+        background-size: contain;
+    }
+    footer address a[class='contact-adress']::before {
+        background: url('img/contact-place.png') no-repeat;
+        background-size: contain;
+    }
+    footer address a[class='contact-email']::before {
+        background: url('img/contact-email.png') no-repeat;
+        background-size: contain;
+    }
+    footer .footer-site-list {
+        padding: 3rem 0;
+        color: white;
+        justify-content: space-between;
+    }
+    footer .footer-social-net {
+        background-color: white;
+        padding: 3rem 0 4rem 2.5rem;
+    }
+    footer .footer-social-net p {
+        width: 13rem;
+        font-weight: 600;
+    }
+    footer .footer-social-net a {
+        display: inline-block;
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 0;
+        margin-right: 1rem;
+        vertical-align: middle;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    footer .footer-social-net a:hover {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    footer .footer-social-net .facebook-btn {
+        background-image: url('img/facebook.png');
+    }
+    footer .footer-social-net .instagramm-btn {
+        background-image: url('img/insta.png');
+    }
+    footer .footer-social-net .tweeter-btn {
+        background-image: url('img/tweeter.png');
+    }
+    footer .footer-social-net .youtube-btn {
+        background-image: url('img/youtube.png');
+    }
+    footer .footer-social-net a:active {
+        opacity: 0.3;
+    }
+}
